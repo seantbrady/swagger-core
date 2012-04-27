@@ -1,0 +1,4 @@
+# Swagger Play Framework Sample App (using Java)
+
+## Overview
+This is a Java port of the [scala-play2](https://github.com/wordnik/swagger-core/tree/master/samples/scala-play2) Swagger sample app.
