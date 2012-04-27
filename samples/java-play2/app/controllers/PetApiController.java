@@ -17,10 +17,9 @@ public class PetApiController {
     @ApiParamsImplicit(
             @ApiParamImplicit(name = "id", value = "ID of pet that needs to be fetched", required = true, dataType = "String", paramType = "path",
                     allowableValues = "range[0,10]"))
-    @ApiErrors(value = {@ApiError(code = 400, reason = "Invalid ID supplied"),
+    @ApiErrors({@ApiError(code = 400, reason = "Invalid ID supplied"),
                 @ApiError(code = 404, reason = "Pet not found")})
     public static Result getPetById(Long id) {
         return ok(Json.toJson("hello pets!"));
     }
-
 }
