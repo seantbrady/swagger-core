@@ -3,10 +3,9 @@
 # ~~~~
 
 # Swagger - Root Resources Listing
-GET     /resources.json             controllers.ApiHelpController.getResources
+GET     /resources.json             controllers.swagger_java.ApiHelpController.getResources
 
 # Pet - Resources
-GET     /pet.json                   controllers.ApiHelpController.getResource(path = "/pet")
-GET     /pet.xml                    controllers.ApiHelpController.getResource(path = "/pet")
+GET     /pet.json                   controllers.swagger_java.ApiHelpController.getResource(path = "/pet")
 
-GET     /pet.json/:id               controllers.PetApiController.getPetById(id: Long)
+GET     /pet.json/:id               controllers.PetApiController.getPetById(id)
